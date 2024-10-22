@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ugly Fish</title>
+    <style>
+        body {
+            background-color: #000080; /* Mørkeblå */
+            color: #ADD8E6; /* Lysblå tekst */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animal-details {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #191970;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #ADD8E6;
+            border: 2px solid #ADD8E6;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #ADD8E6;
+            color: #000080;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Ugly Fish Details</h1>
+
+<div class="animal-details">
+    <img src="uglyfish.webp" alt="Ugly Fish">
+    <p>The ugly fish thrives in the deep sea, where its gelatinous body helps it survive the extreme conditions.</p>
+    <ul>
+        <li>Survives in deep sea pressures.</li>
+        <li>Uses bioluminescence to attract prey.</li>
+        <li>Very few natural predators.</li>
+    </ul>
+</div>
+
+<a th:href="@{/}">Back to the main page</a>
+</body>
+
+</html>

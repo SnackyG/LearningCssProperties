@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ugly Mouse</title>
+    <style>
+        body {
+            background-color: #8B4513; /* Jordbrun */
+            color: #D2B48C; /* Lysebrun tekst */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animal-details {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #696969;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #D2B48C;
+            border: 2px solid #D2B48C;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #D2B48C;
+            color: #8B4513;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Ugly Mouse Details</h1>
+
+<div class="animal-details">
+    <img src="uglymouse.webp" alt="Ugly Mouse">
+    <p>The ugly mouse may not look appealing, but its unique features make it a survivor in tough environments.</p>
+    <ul>
+        <li>Burrows deep underground.</li>
+        <li>Uses large teeth to dig through tough soil.</li>
+        <li>Lives in colonies underground.</li>
+    </ul>
+</div>
+
+<a th:href="@{/}">Back to the main page</a>
+</body>
+
+</html>

@@ -30,15 +30,6 @@ h1 {
     justify-content: center;
 }
 
-.animal1 a, .animal2 a, .animal3 a, .animal4 a, .animal5 a {
-    display: block;
-    border-radius: 15px; /* Apply rounded corners to the link (anchor) element */
-    overflow: hidden; /* Ensure image fits within the rounded corners */
-    max-width: 100%;
-    max-height: 100%;
-    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.8); /* Add a shadow */
-}
-
 .animal1 img, .animal2 img, .animal3 img, .animal4 img, .animal5 img {
     max-width: 100%;
     max-height: 100%;
@@ -46,27 +37,36 @@ h1 {
     border-radius: 15px; /* Still apply rounded corners to the image */
 }
 
-/* Keyframes for rainbow border color animation */
-@keyframes rainbowBorder {
-    0% { border-color: red; }
-    16% { border-color: orange; }
-    33% { border-color: yellow; }
-    50% { border-color: green; }
-    66% { border-color: blue; }
-    83% { border-color: indigo; }
-    100% { border-color: violet; }
+/* Create the rainbow border effect */
+.animal1 a, .animal2 a, .animal3 a, .animal4 a, .animal5 a {
+    display: block;
+    border: 2px solid transparent; /* Initially transparent border */
+    border-radius: 15px; /* Rounded corners */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%; /* Makes the gradient larger to create a moving effect */
+    background-clip: border-box; /* Clip the background to the border */
+    -webkit-background-clip: border-box;
+    box-shadow: 0 0 0 5px transparent; /* Create space for the border effect */
 }
 
-/* Hover effect to trigger the border animation */
+/* Animate the gradient to move around */
 .animal1 a:hover, .animal2 a:hover, .animal3 a:hover, .animal4 a:hover, .animal5 a:hover {
-    border: 5px solid; /* You can set the border thickness as you prefer */
-    animation: rainbowBorder 2s linear infinite; /* Change colors over 2 seconds */
-    transition: border 0.3s ease-in-out; /* Smooth transition on hover */
+    animation: rainbowMove 2s linear infinite; /* 4-second animation, infinite loop */
+}
+
+/* Keyframes to animate the background gradient */
+@keyframes rainbowMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 .animal1 a:hover, .animal2 a:hover, .animal3 a:hover, .animal4 a:hover, .animal5 a:hover {
     transform: scale(1.10); /* Grows the image by 5% */
     transition: transform 0.2s ease-in-out; /* Smooth transition */
-    border: 3px solid #FF6347; /* Changes border to a red color */
+
 }
 

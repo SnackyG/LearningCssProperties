@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smool Monkey</title>
+    <style>
+        body {
+            background-color: #2E8B57; /* Tropisk grøn */
+            color: #006400; /* Mørk grøn tekst */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animal-details {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #87CEEB;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #006400;
+            border: 2px solid #006400;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #006400;
+            color: #2E8B57;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Smool Monkey Details</h1>
+
+<div class="animal-details">
+    <img src="smoolmonkey.webp" alt="Smool Monkey">
+    <p>The smool monkey is an agile and curious creature, known for its playful behavior and sharp intellect.</p>
+    <ul>
+        <li>Uses tools to gather food.</li>
+        <li>Communicates with vocalizations.</li>
+        <li>Extremely agile in trees.</li>
+    </ul>
+</div>
+
+<a th:href="@{/}">Back to the main page</a>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Naked Mole Rat</title>
+    <style>
+        body {
+            background-color: #C2B280; /* Sandbrun */
+            color: #5C4033; /* Mørk brun tekst */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animal-details {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #8B8B8B;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #5C4033;
+            border: 2px solid #5C4033;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #5C4033;
+            color: #C2B280;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Naked Mole Rat Details</h1>
+
+<div class="animal-details">
+    <img src="nakedMoleRat.webp" alt="Naked Mole Rat">
+    <p>The naked mole rat is a fascinating creature known for its unique appearance. It lives in underground colonies and has a very wrinkled, pinkish body.</p>
+    <ul>
+        <li>Nearly hairless.</li>
+        <li>Survives in low-oxygen environments.</li>
+        <li>Lives in a structured colony.</li>
+    </ul>
+</div>
+
+<a th:href="@{/}">Back to the main page</a>
+</body>
+
+</html>

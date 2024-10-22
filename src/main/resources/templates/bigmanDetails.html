@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Big Man Animal</title>
+    <style>
+        body {
+            background-color: #DAA520; /* Gylden gul */
+            color: #8B4513; /* Mørkebrun tekst */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .animal-details {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 2px solid #4682B4;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #8B4513;
+            border: 2px solid #8B4513;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #8B4513;
+            color: #DAA520;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Big Man Animal Details</h1>
+
+<div class="animal-details">
+    <img src="bigman.webp" alt="Big Man Animal">
+    <p>The "Big Man" animal is known for its commanding presence and strength, roaming the open savannahs with grace.</p>
+    <ul>
+        <li>Herbivorous diet.</li>
+        <li>Moves gracefully despite its size.</li>
+        <li>Protects its herd from threats.</li>
+    </ul>
+</div>
+
+<a th:href="@{/}">Back to the main page</a>
+</body>
+
+</html>

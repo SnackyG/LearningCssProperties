@@ -45,9 +45,23 @@ h1 {
     display: block;
     border-radius: 15px; /* Still apply rounded corners to the image */
 }
-.animal1 a:hover, .animal2 a:hover, .animal3 a:hover, .animal4 a:hover, .animal5 a:hover {
-    transform: scale(1.10); /* Grows the image by 5% */
-    transition: transform 0.2s ease-in-out; /* Smooth transition */
-    border: 3px solid #FF6347; /* Changes border to a red color */
+
+/* Keyframes for rainbow border color animation */
+@keyframes rainbowBorder {
+    0% { border-color: red; }
+    16% { border-color: orange; }
+    33% { border-color: yellow; }
+    50% { border-color: green; }
+    66% { border-color: blue; }
+    83% { border-color: indigo; }
+    100% { border-color: violet; }
 }
+
+/* Hover effect to trigger the border animation */
+.animal1 a:hover, .animal2 a:hover, .animal3 a:hover, .animal4 a:hover, .animal5 a:hover {
+    border: 5px solid; /* You can set the border thickness as you prefer */
+    animation: rainbowBorder 2s linear infinite; /* Change colors over 2 seconds */
+    transition: border 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
 

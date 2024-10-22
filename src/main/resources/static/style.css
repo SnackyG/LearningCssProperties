@@ -1,0 +1,53 @@
+body {
+    background-color: cyan;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.animals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    min-height: 300px;
+}
+
+.animal1, .animal2, .animal3, .animal4, .animal5 {
+    max-width: 15%;
+    max-height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animal1 a, .animal2 a, .animal3 a, .animal4 a, .animal5 a {
+    display: block;
+    border-radius: 15px; /* Apply rounded corners to the link (anchor) element */
+    overflow: hidden; /* Ensure image fits within the rounded corners */
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.8); /* Add a shadow */
+}
+
+.animal1 img, .animal2 img, .animal3 img, .animal4 img, .animal5 img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 15px; /* Still apply rounded corners to the image */
+}
+.animal1 a:hover, .animal2 a:hover, .animal3 a:hover, .animal4 a:hover, .animal5 a:hover {
+    transform: scale(1.10); /* Grows the image by 5% */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    border: 3px solid #FF6347; /* Changes border to a red color */
+}
+

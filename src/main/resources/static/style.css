@@ -64,4 +64,9 @@ h1 {
     transition: border 0.3s ease-in-out; /* Smooth transition on hover */
 }
 
+.animal1 a:hover, .animal2 a:hover, .animal3 a:hover, .animal4 a:hover, .animal5 a:hover {
+    transform: scale(1.10); /* Grows the image by 5% */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+    border: 3px solid #FF6347; /* Changes border to a red color */
+}
 
